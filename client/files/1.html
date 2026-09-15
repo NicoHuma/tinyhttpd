@@ -7,35 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Cherokee ETNA</h1>
-    
-
-<h3> document a pour but de démontrer la démarche que notre groupe a eu, afin de mettre en place au mieux le projet Cherokee</h3>
-<p>
-// Explication de la liste chaînée et de la mise en attente des thread.
-qqqqqqqqqqqqqqqqqqqqqqzzzzzzzzzzzzzzzzzzzzzzz
-// Explication de la structure des differentes methodes</p>
-
-
-1ere étape : La déclaration
-<p>
-Nous avons tout d’abord définie les paramètres des différents composants :
-Le port d'écoute ( 12345 )
-La taille du buffer ( 4096 ) 
-La taille du thread pool de notre programme ( 20 )
-Le mutex du thread 
-La cond du thread 
-Nous avons aussi décidé de séparer notre programme en 4 fonctions distinctes : 
-La fonction main(), qui est la fonction qui va s'exécuter lorsque l’on lance le programme 
-La fonction check(), qui est la fonction qui va nous permettre de savoir si une erreur se produit sur notre socket
-La fonction thread_function(), qui est la fonction qui va nous permettre de gérer notre thread si aucune erreur n’est détecté et qui boucle sur la taille du thread pool
-La fonction handle_connection(), qui est la fonction qui va nous permettre de gérer le client et de ne pas surcharger la mémoire. Celle ci s'exécute dans la thread_function().
-</p>
-Etape 2 : Gerer les multi-connexions 
-<p>
-Il nous a fallu gérer les multi connexions des clients vers notre programme. Pour ce faire nous avons mis en place un mutex avec une attente de connection
-
-Diagramme
-</p>
+    <h1>Sample page</h1>
+    <p>Served by the C HTTP server from <code>client/files/</code>.</p>
 </body>
 </html>
